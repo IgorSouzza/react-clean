@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --no-cache",
+    "test": "jest --no-cache --runInBand",
     "test:watch": "jest --watch"
   },
   "lint-staged": {
