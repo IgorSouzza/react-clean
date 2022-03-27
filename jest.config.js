@@ -1,9 +1,9 @@
 module.exports = {
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules', '/.next/'],
   moduleDirectories: ['node_modules', 'src'],
   transform: {
-    '.+\\.ts$': 'ts-jest',
+    '.+\\.(ts|tsx)$': 'ts-jest',
   },
   collectCoverage: true,
   collectCoverageFrom: [
