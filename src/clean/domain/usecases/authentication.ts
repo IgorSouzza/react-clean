@@ -1,4 +1,4 @@
-import { AccountModel } from 'clean/domain/models/account-model';
+import { AccountModel } from 'clean/domain/models';
 
 export type AuthenticationParams = {
   email: string;

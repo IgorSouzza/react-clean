@@ -1,12 +1,8 @@
-import { HttpPostClient } from 'clean/data/protocols/http/http-post-client';
-import { HttpStatusCode } from 'clean/data/protocols/http/http-response';
-import {
-  Authentication,
-  AuthenticationParams,
-} from 'clean/domain/usecases/authentication';
-import { UnexpectedError } from 'clean/domain/errors/unexpected-error';
-import { InvalidCredentialsError } from 'clean/domain/errors/invalid-credentials-error';
-import { AccountModel } from 'clean/domain/models/account-model';
+import { AccountModel } from 'clean/domain/models';
+import { HttpPostClient, HttpStatusCode } from 'clean/data/protocols/http';
+import { Authentication, AuthenticationParams } from 'clean/domain/usecases';
+import { UnexpectedError, InvalidCredentialsError } from 'clean/domain/errors';
+
 export class RemoteAuthentication implements Authentication {
   constructor(
     private readonly url: string,
