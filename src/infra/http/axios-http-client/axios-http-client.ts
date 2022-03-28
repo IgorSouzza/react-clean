@@ -5,7 +5,7 @@ import {
   HttpPostClient,
   HttpPostParams,
   HttpResponse,
-} from 'clean/data/protocols/http';
+} from 'data/protocols/http';
 
 export class AxiosHttpClient implements HttpPostClient<any, any> {
   async post(params: HttpPostParams<any>): Promise<HttpResponse<any>> {

@@ -1,7 +1,5 @@
-import type { NextPage } from 'next';
+import LoginTemplate from 'presentation/pages/Login';
 
-const Home: NextPage = () => {
-  return <div>Hello!</div>;
-};
-
-export default Home;
+export default function Home() {
+  return <LoginTemplate />;
+}
